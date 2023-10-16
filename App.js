@@ -1,13 +1,6 @@
 import { StatusBar } from 'expo-status-bar'
 import { useState } from 'react'
-import {
-	Button,
-	FlatList,
-	StyleSheet,
-	Text,
-	TextInput,
-	View
-} from 'react-native'
+import { Button, FlatList, StyleSheet, TextInput, View } from 'react-native'
 import GoalItem from './components/GoalItem'
 
 export default function App() {
