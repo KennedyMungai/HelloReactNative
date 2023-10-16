@@ -5,7 +5,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Sim Simma. Who's got the keys to my beamer</Text>
-      <StatusBar style="auto" />
     </View>
   );
 }
