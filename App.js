@@ -13,6 +13,7 @@ export default function App() {
         style={styles.button}
         onPress={() => console.log("I have been pressed")}
       />
+      <StatusBar style="auto" />
     </View>
   );
 }
