@@ -8,7 +8,9 @@ export default function App() {
         <TextInput placeholder="Your Course Goal" />
         <Button title="Add Goal" />
       </View>
-      <View></View>
+      <View>
+        <Text>List of goals...</Text>
+      </View>
       <StatusBar style="auto" />
     </View>
   );
