@@ -32,7 +32,13 @@ export default function App() {
 				/>
 			</View>
 			<View style={styles.listContainer}>
-				<Text>List of goals...</Text>
+				{/* <Text> */}
+				{courseGoals.map((goal) => (
+					<Text key={goal} style={styles.goalsList}>
+						{goal}
+					</Text>
+				))}
+				{/* </Text> */}
 			</View>
 			<StatusBar style='auto' />
 		</View>
@@ -61,6 +67,14 @@ const styles = StyleSheet.create({
 		padding: 5
 	},
 	listContainer: {
-		flex: 5
+		flex: 5,
+		flexDirection: 'column',
+		gap: 5,
+		marginTop: 5
+	},
+	goalsList: {
+		padding: 10,
+		backgroundColor: '#ff8855',
+		borderRadius: 5
 	}
 })
