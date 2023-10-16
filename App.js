@@ -41,6 +41,6 @@ const styles = StyleSheet.create({
 		padding: 5
 	},
 	listContainer: {
-		flex: 4
+		flex: 5
 	}
 })
