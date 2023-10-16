@@ -9,7 +9,7 @@ export default function App() {
 					placeholder='Your Course Goal'
 					style={styles.textInput}
 				/>
-				<Button title='Add Goal' />
+				<Button title='Add Goal' color={'#ff8855'} />
 			</View>
 			<View>
 				<Text>List of goals...</Text>
