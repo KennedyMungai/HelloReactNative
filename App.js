@@ -22,7 +22,6 @@ const styles = StyleSheet.create({
 	},
 	inputContainer: {
 		flexDirection: 'row',
-		gap: 10,
 		justifyContent: 'space-between',
 		padding: 5
 	}
