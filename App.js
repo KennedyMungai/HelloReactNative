@@ -25,6 +25,10 @@ export default function App() {
 		setModalIsVisible(true)
 	}
 
+	const endAddGoalHandler = () => {
+		setModalIsVisible(false)
+	}
+
 	return (
 		<View style={styles.appContainer}>
 			<Button
