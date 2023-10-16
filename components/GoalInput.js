@@ -11,6 +11,7 @@ const GoalInput = ({ onAddGoal, isVisible, isNotVisible }) => {
 	const addGoalHandler = () => {
 		onAddGoal(enteredGoalText)
 		setEnteredGoalText('')
+		isNotVisible()
 	}
 
 	return (
