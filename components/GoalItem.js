@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 const GoalItem = (itemData) => {
 	return (
 		<View style={styles.goalsList}>
-			<Text style={{ color: 'white' }}>{itemData.item.text}</Text>
+			<Text style={{ color: 'white' }}>{itemData.item}</Text>
 		</View>
 	)
 }
@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
 	goalsList: {
 		padding: 10,
 		backgroundColor: '#ff8855',
-		borderRadius: 5
+		borderRadius: 5,
+		marginVertical: 2
 	}
 })
