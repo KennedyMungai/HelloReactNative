@@ -1,12 +1,8 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native'
 
-const GoalItem = ({ text }) => {
-	const deleteGoal = () => {
-		console.log('I have been deleted')
-	}
-
+const GoalItem = ({ text, onDeleteItem }) => {
 	return (
-		<Pressable onPress={deleteGoal}>
+		<Pressable onPress={onDeleteItem}>
 			<View style={styles.goalsList}>
 				<Text style={styles.individualGoal}>{text}</Text>
 			</View>
