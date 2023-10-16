@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar'
 import { useState } from 'react'
-import { FlatList, StyleSheet, View } from 'react-native'
+import { FlatList, StyleSheet, View, Button } from 'react-native'
 import GoalItem from './components/GoalItem'
 import GoalInput from './components/GoalInput'
 
@@ -22,6 +22,7 @@ export default function App() {
 
 	return (
 		<View style={styles.appContainer}>
+			<Button title='Add a new goal' color={'#ff5588'} />
 			<GoalInput onAddGoal={addGoalHandler} />
 			<View style={styles.listContainer}>
 				<FlatList
