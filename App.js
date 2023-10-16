@@ -1,6 +1,14 @@
 import { StatusBar } from 'expo-status-bar'
 import { useState } from 'react'
-import { Button, StyleSheet, Text, TextInput, View } from 'react-native'
+import {
+	Button,
+	FlatList,
+	SafeAreaView,
+	StyleSheet,
+	Text,
+	TextInput,
+	View
+} from 'react-native'
 
 export default function App() {
 	const [enteredGoalText, setEnteredGoalText] = useState('')
@@ -32,12 +40,15 @@ export default function App() {
 				/>
 			</View>
 			<View style={styles.listContainer}>
-				{courseGoals.map((goal) => (
-					<View style={styles.goalsList} key={goal}>
-						<Text style={styles.individualGoal}>{goal}</Text>
-					</View>
-				))}
+				<FlatList alwaysBounceVertical={true}>
+					{courseGoals.map((goal) => (
+						<View key={goal} style={styles.individualGoal}>
+							<Text style={{ color: 'white' }}>{goal}</Text>
+						</View>
+					))}
+				</FlatList>
 			</View>
+
 			<StatusBar style='auto' />
 		</View>
 	)
