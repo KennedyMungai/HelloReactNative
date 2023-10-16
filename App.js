@@ -67,7 +67,8 @@ const styles = StyleSheet.create({
 	listContainer: {
 		flex: 5,
 		flexDirection: 'column',
-		gap: 10
+		gap: 10,
+		marginTop: 10
 	},
 	goalsList: {
 		padding: 10,
