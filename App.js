@@ -24,7 +24,7 @@ export default function App() {
 						return <GoalItem text={itemData.item.text} />
 					}}
 					keyExtractor={(item, index) => {
-						return item.id
+						return index
 					}}
 					alwaysBounceVertical={true}
 				/>
