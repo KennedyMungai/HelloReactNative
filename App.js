@@ -29,7 +29,8 @@ const styles = StyleSheet.create({
 		justifyContent: 'space-between',
 		padding: 5,
 		alignItems: 'center',
-		paddingBottom: 24
+		paddingBottom: 24,
+		borderBottomWidth: 1
 	},
 	textInput: {
 		borderWidth: 1,
