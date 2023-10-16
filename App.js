@@ -2,20 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { Button, StyleSheet, Text, View } from "react-native";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <View style={styles.firstInnerView}>
-        <Text>Some text</Text>
-      </View>
-      <Text>Chickenwings</Text>
-      <Button
-        title="Some Button"
-        style={styles.button}
-        onPress={() => console.log("I have been pressed")}
-      />
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <View></View>;
 }
 
 const styles = StyleSheet.create({
