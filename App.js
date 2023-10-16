@@ -3,7 +3,6 @@ import { useState } from 'react'
 import {
 	Button,
 	FlatList,
-	SafeAreaView,
 	StyleSheet,
 	Text,
 	TextInput,
@@ -21,7 +20,7 @@ export default function App() {
 	const addGoalHandler = () => {
 		setCourseGoals((currentCourseGoals) => [
 			...currentCourseGoals,
-			enteredGoalText
+			{ text: enteredGoalText, key: Math.random().toString() }
 		])
 	}
 
@@ -40,13 +39,19 @@ export default function App() {
 				/>
 			</View>
 			<View style={styles.listContainer}>
-				<FlatList alwaysBounceVertical={true}>
-					{courseGoals.map((goal) => (
-						<View key={goal} style={styles.individualGoal}>
-							<Text style={{ color: 'white' }}>{goal}</Text>
-						</View>
-					))}
-				</FlatList>
+				<FlatList
+					data={courseGoals}
+					renderItem={(itemData) => {
+						return (
+							<View style={styles.individualGoal}>
+								<Text style={{ color: 'white' }}>
+									{itemData.item.text}
+								</Text>
+							</View>
+						)
+					}}
+					alwaysBounceVertical={true}
+				/>
 			</View>
 
 			<StatusBar style='auto' />
