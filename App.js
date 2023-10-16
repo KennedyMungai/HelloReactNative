@@ -26,12 +26,14 @@ const styles = StyleSheet.create({
 	inputContainer: {
 		flexDirection: 'row',
 		justifyContent: 'space-between',
-		padding: 5
+		padding: 5,
+		alignItems: 'center'
 	},
 	textInput: {
 		borderWidth: 1,
 		borderColor: '#ccc',
 		width: '80%',
-		marginRight: 8
+		marginRight: 8,
+		padding: 8
 	}
 })
