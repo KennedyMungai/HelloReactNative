@@ -50,6 +50,9 @@ export default function App() {
 							</View>
 						)
 					}}
+					keyExtractor={(item, index) => {
+						return item.id
+					}}
 					alwaysBounceVertical={true}
 				/>
 			</View>
