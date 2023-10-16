@@ -15,6 +15,8 @@ export default function App() {
 			...currentCourseGoals,
 			enteredGoalText
 		])
+
+		setEnteredGoalText('')
 	}
 
 	return (
@@ -32,13 +34,11 @@ export default function App() {
 				/>
 			</View>
 			<View style={styles.listContainer}>
-				{/* <Text> */}
 				{courseGoals.map((goal) => (
 					<Text key={goal} style={styles.goalsList}>
 						{goal}
 					</Text>
 				))}
-				{/* </Text> */}
 			</View>
 			<StatusBar style='auto' />
 		</View>
