@@ -4,6 +4,9 @@ import { StyleSheet, Text, View } from "react-native";
 export default function App() {
   return (
     <View style={styles.container}>
+      <View>
+        <Text>Some text</Text>
+      </View>
       <Text>Chickenwings</Text>
     </View>
   );
