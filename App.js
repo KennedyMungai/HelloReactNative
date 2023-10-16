@@ -28,7 +28,8 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		justifyContent: 'space-between',
 		padding: 5,
-		alignItems: 'center'
+		alignItems: 'center',
+		paddingBottom: 24
 	},
 	textInput: {
 		borderWidth: 1,
