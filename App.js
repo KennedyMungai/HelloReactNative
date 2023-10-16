@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
 	textInput: {
 		borderWidth: 1,
 		borderColor: '#ccc',
-		width: '70%'
+		width: '80%',
+		marginRight: 8
 	}
 })
