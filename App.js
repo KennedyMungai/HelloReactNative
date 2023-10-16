@@ -83,10 +83,5 @@ const styles = StyleSheet.create({
 		flexDirection: 'column',
 		gap: 10,
 		marginTop: 10
-	},
-	goalsList: {
-		padding: 10,
-		backgroundColor: '#ff8855',
-		borderRadius: 5
 	}
 })
