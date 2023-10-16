@@ -8,7 +8,11 @@ export default function App() {
         <Text>Some text</Text>
       </View>
       <Text>Chickenwings</Text>
-      <Button title="Some Button" style={styles.button} />
+      <Button
+        title="Some Button"
+        style={styles.button}
+        onPress={() => console.log("I have been pressed")}
+      />
     </View>
   );
 }
