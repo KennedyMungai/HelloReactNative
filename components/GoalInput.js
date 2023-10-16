@@ -28,11 +28,7 @@ const GoalInput = ({ onAddGoal, isVisible }) => {
 						color={'#ff8855'}
 						onPress={addGoalHandler}
 					/>
-					<Button
-						title='Cancel'
-						color={'#ff8855'}
-						onPress={addGoalHandler}
-					/>
+					<Button title='Cancel' color={'#dd8855'} />
 				</View>
 			</View>
 		</Modal>
