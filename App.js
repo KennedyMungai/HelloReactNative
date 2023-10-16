@@ -14,7 +14,7 @@ export default function App() {
 		])
 	}
 
-	const deleteGoalHandler = () => {
+	const deleteGoalHandler = (id) => {
 		console.log('DELETED')
 	}
 
