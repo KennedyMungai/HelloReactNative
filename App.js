@@ -4,7 +4,15 @@ import { Button, StyleSheet, Text, View } from "react-native";
 export default function App() {
   return (
     <View style={styles.container}>
-      <View>
+      <View
+        style={{
+          margin: 16,
+          borderWidth: 2,
+          borderColor: "orange",
+          padding: 16,
+          borderRadius: 10,
+        }}
+      >
         <Text>Some text</Text>
       </View>
       <Text>Chickenwings</Text>
@@ -25,7 +33,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   button: {
-    borderRadius: 3,
     backgroundColor: "#ff8855",
     color: "#000",
   },
