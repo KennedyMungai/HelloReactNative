@@ -88,8 +88,5 @@ const styles = StyleSheet.create({
 		padding: 10,
 		backgroundColor: '#ff8855',
 		borderRadius: 5
-	},
-	individualGoal: {
-		color: 'white'
 	}
 })
