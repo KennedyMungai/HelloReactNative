@@ -16,22 +16,4 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  button: {
-    backgroundColor: "#ff8855",
-    color: "#000",
-  },
-  firstInnerView: {
-    margin: 16,
-    borderWidth: 2,
-    borderColor: "orange",
-    padding: 16,
-    borderRadius: 10,
-  },
-});
+const styles = StyleSheet.create({});
