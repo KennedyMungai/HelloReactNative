@@ -15,8 +15,6 @@ export default function App() {
 			...currentCourseGoals,
 			enteredGoalText
 		])
-
-		setEnteredGoalText('')
 	}
 
 	return (
