@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-const GoalItem = () => {
+const GoalItem = (itemData) => {
 	return (
 		<View style={styles.goalsList}>
 			<Text style={{ color: 'white' }}>{itemData.item.text}</Text>
