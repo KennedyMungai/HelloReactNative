@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 const GoalItem = (itemData) => {
 	return (
 		<View style={styles.goalsList}>
-			<Text style={{ color: 'white' }}>{itemData.item}</Text>
+			<Text style={styles.individualGoal}>{itemData.item}</Text>
 		</View>
 	)
 }
