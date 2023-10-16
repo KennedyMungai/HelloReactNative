@@ -31,6 +31,7 @@ export default function App() {
 							<GoalItem
 								text={itemData.item.text}
 								onDeleteItem={deleteGoalHandler}
+								id={itemData.item.id}
 							/>
 						)
 					}}
