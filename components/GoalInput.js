@@ -44,7 +44,7 @@ export default GoalInput
 const styles = StyleSheet.create({
 	inputContainer: {
 		flexDirection: 'column',
-		justifyContent: 'justify-center',
+		justifyContent: 'center',
 		padding: 5,
 		alignItems: 'center',
 		paddingBottom: 24,
