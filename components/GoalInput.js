@@ -14,7 +14,7 @@ const GoalInput = ({ onAddGoal }) => {
 	}
 
 	return (
-		<Modal>
+		<Modal animationType='slide'>
 			<View style={styles.inputContainer}>
 				<TextInput
 					placeholder='Your Course Goal'
