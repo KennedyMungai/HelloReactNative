@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar'
 import { useState } from 'react'
 import { Button, FlatList, StyleSheet, TextInput, View } from 'react-native'
 import GoalItem from './components/GoalItem'
+import GoalInput from './components/GoalInput'
 
 export default function App() {
 	const [enteredGoalText, setEnteredGoalText] = useState('')
@@ -20,18 +21,7 @@ export default function App() {
 
 	return (
 		<View style={styles.appContainer}>
-			<View style={styles.inputContainer}>
-				<TextInput
-					placeholder='Your Course Goal'
-					style={styles.textInput}
-					onChangeText={goalInputHandler}
-				/>
-				<Button
-					title='Add Goal'
-					color={'#ff8855'}
-					onPress={addGoalHandler}
-				/>
-			</View>
+			<GoalInput />
 			<View style={styles.listContainer}>
 				<FlatList
 					data={courseGoals}
