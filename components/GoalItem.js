@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 
 const GoalItem = ({ text }) => {
+    
 	return (
 		<View style={styles.goalsList}>
 			<Text style={styles.individualGoal}>{text}</Text>
