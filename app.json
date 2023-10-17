@@ -3,6 +3,7 @@
     "name": "HelloReactNative",
     "slug": "HelloReactNative",
     "version": "1.0.0",
+    "backgroundColor": "#ffaa00",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",

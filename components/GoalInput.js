@@ -55,7 +55,8 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		paddingBottom: 24,
 		borderBottomWidth: 1,
-		flex: 1
+		flex: 1,
+		backgroundColor: '#fa0'
 	},
 	textInput: {
 		borderWidth: 1,
