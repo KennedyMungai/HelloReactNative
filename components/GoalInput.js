@@ -17,7 +17,11 @@ const GoalInput = ({ onAddGoal, isVisible, isNotVisible }) => {
 	return (
 		<Modal animationType='slide' visible={isVisible}>
 			<View style={styles.inputContainer}>
-				<Image source={} />
+				<Image
+					source={require('../assets/images/some_image.jpg')}
+					style={styles.image}
+					resizeMode='stretch'
+				/>
 				<TextInput
 					placeholder='Your Course Goal'
 					style={styles.textInput}
@@ -59,5 +63,8 @@ const styles = StyleSheet.create({
 		width: '70%',
 		padding: 5,
 		margin: 10
+	},
+	image: {
+		flex: 1
 	}
 })
